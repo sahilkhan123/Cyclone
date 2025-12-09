@@ -153,9 +153,6 @@ def run_baseline_numbers(baseline_timings, error_rates=[5e-4], num_shots=1000):
     #codes = ["72-12-6", "72-12-6"]
     #codes = ["144-12-12"]
     for timing in baseline_timings: #really for code in baseline timings
-        if (index != 1):
-            index += 1
-            continue
         code = codes[index]
         log_file_string = f"{code}_baseline.log"
         output_file = open(log_file_string,'w')
